@@ -150,6 +150,7 @@ box-shadow:
 <nav>
 <div class="logo">🛕 श्री लक्ष्मी नारायण सेवा ट्रस्ट</div>
 <div>
+<a href="panchang.html">आज का पंचांग</a>
 <a href="#about">About</a>
 <a  href="gallery.html">Gallery</a>
 <a href="#booking">Booking</a>
@@ -163,7 +164,7 @@ box-shadow:
 <section class="hero">
 <div class="slide active" style="background-image:url('ram-mandir-1.jpg');"></div>
 <div class="slide" style="background-image:url('kanak-bhawan.jpg');"></div>
-<div class="slide" style="background-image:url('/saryu-aarti.jpg');"></div>
+<div class="slide" style="background-image:url('saryu-aarti.jpg');"></div>
 <div class="content">
 <h1>श्री लक्ष्मी नारायण सेवा ट्रस्ट</h1>
 <p>श्री अयोध्या धाम</p><br>
@@ -292,16 +293,48 @@ box-shadow:
 </section>
 
 <section class="section" id="booking">
-<h2>ऑनलाइन बुकिंग</h2>
+
+<h2>🛕 पूजा बुकिंग फॉर्म</h2>
+
 <div class="card">
-<form>
-<input placeholder="नाम">
-<input placeholder="मोबाइल नंबर">
-<select><option>पूजा चुनें</option><option>रुद्राभिषेक</option><option>सत्यनारायण कथा</option></select>
-<textarea placeholder="संदेश"></textarea>
-<button type="button">बुकिंग भेजें</button>
-</form>
+
+<input id="name"
+placeholder="पूरा नाम"
+style="width:100%;padding:12px;margin:10px 0;">
+
+<input id="mobile"
+placeholder="मोबाइल नंबर"
+style="width:100%;padding:12px;margin:10px 0;">
+
+<input id="city"
+placeholder="शहर"
+style="width:100%;padding:12px;margin:10px 0;">
+
+<select id="puja"
+style="width:100%;padding:12px;margin:10px 0;">
+
+<option>रुद्राभिषेक पूजा</option>
+<option>सत्यनारायण कथा</option>
+<option>गृह प्रवेश पूजा</option>
+<option>विवाह संस्कार</option>
+<option>नामकरण संस्कार</option>
+<option>नवग्रह शांति पूजा</option>
+
+</select>
+
+<input id="date"
+type="date"
+style="width:100%;padding:12px;margin:10px 0;">
+
+<button class="btn"
+onclick="sendBooking()">
+
+बुकिंग भेजें
+
+</button>
+
 </div>
+
 </section>
 <section class="section" id="video">
 
@@ -316,9 +349,33 @@ muted
 loop
 style="border-radius:20px;">
 
-<source src="trust-video.mp4" type="video/mp4">
+<source src="video/trust-video.mp4" type="video/mp4">
 
 </video>
+
+</section>
+
+<section class="section">
+
+<h2>🌟 भक्तों की राय</h2>
+
+<div class="grid">
+
+<div class="card">
+⭐⭐⭐⭐⭐
+<p>
+पूजा बहुत सुंदर सम्पन्न हुई।
+</p>
+</div>
+
+<div class="card">
+⭐⭐⭐⭐⭐
+<p>
+अयोध्या से लाइव दर्शन का अनुभव अद्भुत रहा।
+</p>
+</div>
+
+</div>
 
 </section>
 
@@ -354,6 +411,14 @@ style="border-radius:20px;">
 </div>
 
 </section>
+<h2>📍 हमारा स्थान</h2>
+
+<iframe
+src="https://www.google.com/maps?q=Ayodhya&output=embed"
+width="100%"
+height="400"
+style="border:0;border-radius:20px;">
+</iframe>
 
 
 <footer>© 2026 श्री लक्ष्मी नारायण सेवा ट्रस्ट</footer>
@@ -395,6 +460,29 @@ eventName +
 window.open(
 "https://wa.me/917408708005?text=" +
 encodeURIComponent(msg),
+"_blank"
+);
+
+}
+
+function sendBooking(){
+
+let name=document.getElementById("name").value;
+let mobile=document.getElementById("mobile").value;
+let city=document.getElementById("city").value;
+let puja=document.getElementById("puja").value;
+let date=document.getElementById("date").value;
+
+let msg=
+"🛕 नई पूजा बुकिंग%0A%0A"+
+"नाम: "+name+"%0A"+
+"मोबाइल: "+mobile+"%0A"+
+"शहर: "+city+"%0A"+
+"पूजा: "+puja+"%0A"+
+"तिथि: "+date;
+
+window.open(
+"https://wa.me/917408708005?text="+msg,
 "_blank"
 );
 
