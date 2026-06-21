@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Events</title>
+<style>
+
+body{
+background:#0b0b0b;
+color:white;
+font-family:Arial;
+padding:30px;
+}
+
+.card{
+background:#1a1a1a;
+padding:20px;
+margin:20px;
+border-radius:15px;
+border:1px solid gold;
+}
+
+button{
+background:gold;
+padding:12px 20px;
+border:none;
+border-radius:30px;
+font-weight:bold;
+cursor:pointer;
+}
+
+h1{
+text-align:center;
+color:gold;
+}
+
+</style>
+</head>
+<body>
+
+<h1>🛕 अयोध्या धार्मिक कार्यक्रम</h1>
+
+<div class="card">
+
+<h2>🚩 गुरु पूर्णिमा महोत्सव</h2>
+
+<p>
+स्थान : श्री अयोध्या धाम
+</p>
+
+<button onclick="joinEvent('गुरु पूर्णिमा महोत्सव')">
+कार्यक्रम में शामिल हों
+</button>
+
+</div>
+
+<div class="card">
+
+<h2>🔱 सावन रुद्राभिषेक</h2>
+
+<p>
+स्थान : श्री अयोध्या धाम
+</p>
+
+<button onclick="joinEvent('सावन रुद्राभिषेक')">
+कार्यक्रम में शामिल हों
+</button>
+
+</div>
+
+<div class="card">
+
+<h2>🪔 दीपोत्सव अयोध्या</h2>
+
+<p>
+स्थान : श्री अयोध्या धाम
+</p>
+
+<button onclick="joinEvent('दीपोत्सव अयोध्या')">
+कार्यक्रम में शामिल हों
+</button>
+
+</div>
+
+<script>
+
+function joinEvent(eventName){
+
+let msg =
+"नमस्ते, मैं " +
+eventName +
+" कार्यक्रम में शामिल होना चाहता हूँ।";
+
+window.open(
+"https://wa.me/7408708005?text="
++ encodeURIComponent(msg),
+"_blank"
+);
+
+}
+
+</script>
+
+</body>
+</html>

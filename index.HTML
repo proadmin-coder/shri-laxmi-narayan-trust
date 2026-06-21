@@ -1,0 +1,406 @@
+
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>श्री लक्ष्मी नारायण सेवा ट्रस्ट</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif}
+html{scroll-behavior:smooth}
+body{background:#090909;color:#fff;overflow-x:hidden}
+nav{position:fixed;top:0;width:100%;display:flex;justify-content:space-between;align-items:center;padding:15px 5%;background:rgba(0,0,0,.6);backdrop-filter:blur(12px);z-index:1000}
+nav a{color:#fff;text-decoration:none;margin:0 10px}
+.logo{color:#FFD700;font-weight:700}
+.hero{height:100vh;position:relative;overflow:hidden}
+.slide{position:absolute;inset:0;background-size:cover;background-position:center;opacity:0;transition:1.5s}
+.slide.active{opacity:1}
+.overlay{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.55);
+backdrop-filter:blur(300px);
+}
+.content{
+position:absolute;
+top:40%;
+left:50%;
+transform:translate(-50%,-50%);
+text-align:center;
+width:90%;
+z-index:10;
+
+background:none;
+backdrop-filter:none;
+padding:0;
+border:none;
+border-radius:0;
+box-shadow:none;
+}
+
+.content h1{
+font-size:78px;
+font-weight:800;
+line-height:1.1;
+
+color:#FFF8DC;
+
+text-shadow:
+0 3px 6px rgba(0,0,0,.95),
+0 0 15px rgba(255,215,0,.8),
+0 0 35px rgba(255,215,0,.4);
+}
+
+.content p{
+font-size:27px;
+font-weight:500;
+margin-top:15px;
+color:rgb(250, 250, 250);
+text-shadow:0 2px 5px rgba(0,0,0,.9);
+}
+.content{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);text-align:center;width:90%}
+.content h1{
+font-size:100px;
+font-weight:800;
+color:#ff0000;
+
+text-shadow:
+0 0 10px #FFD700,
+0 0 20px #FFD700,
+0 0 40px #FFD700,
+0 0 80px #FFD700;
+
+animation:blinkGlow 2s infinite alternate;
+}
+
+@keyframes blinkGlow{
+
+0%{
+opacity:1;
+text-shadow:
+0 0 10px #FFD700,
+0 0 20px #FFD700,
+0 0 40px #FFD700;
+}
+
+50%{
+opacity:0.6;
+text-shadow:
+0 0 20px #ffffff,
+0 0 40px #FFD700,
+0 0 60px #FFD700;
+}
+
+100%{
+opacity:1;
+text-shadow:
+0 0 15px #FFD700,
+0 0 30px #FFD700,
+0 0 60px #FFD700,
+0 0 100px #FFD700;
+}
+
+}
+.btn{
+background:linear-gradient(135deg,#FFD700,#F4C430);
+color:#000;
+font-weight:700;
+border-radius:50px;
+padding:16px 35px;
+box-shadow:0 0 2px rgba(255,215,0,.5);
+transition:.3s;
+}   
+
+.btn:hover{
+transform:translateY(-4px) scale(1.05);
+}
+.section{padding:90px 6%}
+h2{text-align:center;color:#FFD700;margin-bottom:25px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.card{background:rgba(255,255,255,.08);border:1px solid rgba(255,215,0,.2);padding:25px;border-radius:20px;backdrop-filter:blur(10px);transition:.4s}
+.card:hover{transform:translateY(-8px)}
+input,textarea,select{width:100%;padding:12px;margin:10px 0;border:none;border-radius:10px}
+button{padding:12px 20px;background:#FFD700;border:none;border-radius:25px;font-weight:bold}
+footer{text-align:center;padding:30px;background:#111}
+.whatsapp{position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;padding:16px;border-radius:50%;text-decoration:none}
+.card h3{
+color:#F4C430;
+margin-bottom:10px;
+font-size:24px;
+}
+
+.card p{
+font-size:18px;
+line-height:1.8;
+color:#f5f5f5;
+}
+video, iframe{
+border-radius:20px;
+box-shadow:
+0 0 20px rgba(244,196,48,.3);
+}
+</style>
+</head>
+<body>
+
+<nav>
+<div class="logo">🛕 श्री लक्ष्मी नारायण सेवा ट्रस्ट</div>
+<div>
+<a href="#about">About</a>
+<a  href="gallery.html">Gallery</a>
+<a href="#booking">Booking</a>
+<a href="#contact">Contact</a>
+<a href="events.html">Events</a>
+<a href="admin.html">Admin Login</a>
+
+</div>
+</nav>
+
+<section class="hero">
+<div class="slide active" style="background-image:url('images/ram-mandir-1.jpg');"></div>
+<div class="slide" style="background-image:url('images/kanak-bhawan.jpg');"></div>
+<div class="slide" style="background-image:url('images/saryu-aarti.jpg');"></div>
+<div class="content">
+<h1>श्री लक्ष्मी नारायण सेवा ट्रस्ट</h1>
+<p>श्री अयोध्या धाम</p><br>
+<a href="#booking" class="btn">पूजा बुक करें</a>
+<a href="https://wa.me/7408708005" class="btn">पंडित जी से बात करें</a>
+</div>
+</section>
+
+<section class="section" id="about">
+<h2>श्री लक्ष्मीनारायण सेवा ट्रस्ट</h2>
+
+<div class="card">
+
+<h3>🛕 ट्रस्ट परिचय</h3>
+
+<p>
+श्री लक्ष्मीनारायण सेवा ट्रस्ट एक धार्मिक, आध्यात्मिक एवं सामाजिक संस्था है,
+जो श्री अयोध्या धाम में सनातन धर्म, पूजा-अर्चना, धार्मिक अनुष्ठान,
+सामाजिक सेवा एवं जनकल्याण के कार्यों के लिए समर्पित है।
+</p>
+
+<br>
+
+<h3>अध्यक्ष</h3>
+<p>
+<strong>स्वामी भागवताचार्य जी महाराज</strong><br>
+श्री अयोध्या धाम
+</p>
+
+<br>
+
+<h3>उपाध्यक्ष</h3>
+<p>
+<strong>श्रीकांत मिश्रा</strong><br>
+श्री अयोध्या धाम
+</p>
+
+<br>
+
+<h3>कार्यकारिणी सदस्य</h3>
+<p>
+<strong>आयुष मिश्र</strong><br>
+श्री अयोध्या धाम
+</p>
+
+</div>
+</section>
+
+<section class="section" id="events">
+
+<h2>🛕 आगामी पूजा एवं धार्मिक अनुष्ठान</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>🔱 रुद्राभिषेक पूजा</h3>
+<p>भगवान शिव का विशेष अभिषेक</p>
+<button onclick="bookPuja('रुद्राभिषेक पूजा')">
+बुक करें
+</button>
+</div>
+
+<div class="card">
+<h3>📖 सत्यनारायण कथा</h3>
+<p>घर एवं मंदिर में कथा आयोजन</p>
+<button onclick="bookPuja('सत्यनारायण कथा')">
+बुक करें
+</button>
+</div>
+
+<div class="card">
+<h3>🏠 गृह प्रवेश पूजा</h3>
+<p>नए घर के शुभ प्रवेश हेतु</p>
+<button onclick="bookPuja('गृह प्रवेश पूजा')">
+बुक करें
+</button>
+</div>
+
+<div class="card">
+<h3>💍 विवाह संस्कार</h3>
+<p>वैदिक विवाह अनुष्ठान</p>
+<button onclick="bookPuja('विवाह संस्कार')">
+बुक करें
+</button>
+</div>
+
+<div class="card">
+<h3>👶 नामकरण संस्कार</h3>
+<p>शिशु नामकरण कार्यक्रम</p>
+<button onclick="bookPuja('नामकरण संस्कार')">
+बुक करें
+</button>
+</div>
+
+<div class="card">
+<h3>🪔 नवग्रह शांति पूजा</h3>
+<p>ग्रह दोष निवारण हेतु</p>
+<button onclick="bookPuja('नवग्रह शांति पूजा')">
+बुक करें
+</button>
+</div>
+
+</div>
+
+</section>
+
+
+<section class="section" id="temples">
+<h2>प्रमुख मंदिर</h2>
+<div class="grid">
+<div class="card">श्री राम जन्मभूमि मंदिर</div>
+<div class="card">हनुमानगढ़ी</div>
+<div class="card">नागेश्वरनाथ मंदिर</div>
+<div class="card">कनक भवन</div>
+</div>
+</section>
+
+<section class="section" id="services">
+<h2>पूजा सेवाएं</h2>
+<div class="grid">
+<div class="card">रुद्राभिषेक पूजा</div>
+<div class="card">सत्यनारायण कथा</div>
+<div class="card">गृह प्रवेश</div>
+<div class="card">कुंडली एवं ज्योतिष</div>
+</div>
+</section>
+
+<section class="section" id="booking">
+<h2>ऑनलाइन बुकिंग</h2>
+<div class="card">
+<form>
+<input placeholder="नाम">
+<input placeholder="मोबाइल नंबर">
+<select><option>पूजा चुनें</option><option>रुद्राभिषेक</option><option>सत्यनारायण कथा</option></select>
+<textarea placeholder="संदेश"></textarea>
+<button type="button">बुकिंग भेजें</button>
+</form>
+</div>
+</section>
+<section class="section" id="video">
+
+<h2>🎥 ट्रस्ट वीडियो</h2>
+
+<video
+width="350px"
+height="200%"
+controls
+autoplay
+muted
+loop
+style="border-radius:20px;">
+
+<source src="video/trust-video.mp4" type="video/mp4">
+
+</video>
+
+</section>
+
+<section class="section" id="contact">
+
+<h2>संपर्क करें</h2>
+
+<div class="card">
+
+<p>
+श्री लक्ष्मीनारायण सेवा ट्रस्ट से किसी भी प्रकार की जानकारी,
+पूजा बुकिंग, धार्मिक अनुष्ठान एवं अन्य सेवाओं हेतु संपर्क करें।
+</p>
+
+<br>
+
+<h3>📞 संपर्क नंबर</h3>
+
+<p>7408708005</p>
+<p>9450454476</p>
+<p>9161243761</p>
+<p>7518340228</p>
+
+<br>
+
+<h3>📍 पता</h3>
+
+<p>
+श्री अयोध्या धाम,<br>
+उत्तर प्रदेश
+</p>
+
+</div>
+
+</section>
+
+
+<footer>© 2026 श्री लक्ष्मी नारायण सेवा ट्रस्ट</footer>
+<a class="whatsapp" href="https://wa.me/7408708005">💬</a>
+
+<script>
+let slides = document.querySelectorAll('.slide');
+let current = 0;
+
+setInterval(() => {
+    slides[current].classList.remove('active');
+    current = (current + 1) % slides.length;
+    slides[current].classList.add('active');
+}, 4000);
+
+function bookPuja(puja){
+
+let msg =
+"नमस्ते, मुझे " +
+puja +
+" की बुकिंग करनी है।";
+
+window.open(
+"https://wa.me/917408708005?text=" +
+encodeURIComponent(msg),
+"_blank"
+);
+
+}
+
+
+function applyEvent(eventName){
+
+let msg =
+"नमस्ते, मैं " +
+eventName +
+" कार्यक्रम में शामिल होना चाहता हूँ।";
+
+window.open(
+"https://wa.me/917408708005?text=" +
+encodeURIComponent(msg),
+"_blank"
+);
+
+}
+
+</script>
+
+</body>
+</html>
